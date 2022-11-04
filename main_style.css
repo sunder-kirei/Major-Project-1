@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* Nav Bar */
@@ -58,28 +59,31 @@ section.releases-carasoul {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   row-gap: 0.5rem;
+  padding: 0.25rem;
 }
 /* Card for releases */
 .releases-songs {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-template-areas:
     "album-art title-name"
     "album-art desc";
   border: 1px solid violet;
+  overflow: hidden;
+}
+.image {
+  grid-area: album-art;
+  width: 100%;
   height: 100%;
 }
-.releases-songs > img {
-  grid-area: "album-art";
-  width: 40%;
-  margin-bottom: 0;
+.image > img {
   height: 100%;
   object-fit: contain;
-  overflow: hidden;
-  border: 1px solid red;
 }
-
-.dropdown {
-  display: none;
+.releases-songs > div {
+  width: 100%;
+  height: 100%;
 }
 
 /* Current playlist */
