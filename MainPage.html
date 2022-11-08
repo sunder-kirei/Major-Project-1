@@ -6,13 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music Player</title>
     <link rel="stylesheet" href="main_style.css" />
+
+    <!-- NavBar CSS -->
+    <link rel="stylesheet" href="./navbar css/navbar.css" />
+    <!-- NavBar CSS -->
+
     <script
       src="https://kit.fontawesome.com/2d9b67a497.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <header class="top-bar"></header>
+    <header class="top-bar navbar">
+      <div class="logo">
+        <img src="../assets/navbar/icons8-youtube-music-96.png" alt="icon" />
+        <span>
+          <h4>Ninja</h4>
+          <h3>Studio</h3>
+        </span>
+      </div>
+      <button id="favourites">Favourites</button>
+      <div class="search-box">
+        <img
+          src="./assets/navbar/search_FILL0_wght400_GRAD0_opsz48.svg"
+          alt="search"
+        />
+        <input type="text" placeholder="Search" />
+        <img
+          src="./assets/navbar/keyboard_voice_FILL0_wght400_GRAD0_opsz48.svg"
+          alt="voice search"
+        />
+      </div>
+      <img
+        src="./assets/navbar/notifications_FILL0_wght400_GRAD0_opsz48.svg"
+        alt="notifications"
+        class="notification"
+      />
+      <div class="user">
+        <img
+          src="./assets/navbar/person_FILL0_wght400_GRAD0_opsz48.svg"
+          alt="user image"
+        />
+      </div>
+    </header>
     <div class="player-content">
       <!-- Main -->
       <main>
