@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music Player</title>
     <link rel="stylesheet" href="main_style.css" />
+    <script
+      src="https://kit.fontawesome.com/2d9b67a497.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="top-bar"></header>
@@ -27,7 +31,29 @@
               <div class="image"><img src="assets/album_art.jpg" alt="" /></div>
               <p class="album-name album-font">Time</p>
               <p class="album-date album-font">Aug 11,2017</p>
-              <div class="dropdown"></div>
+              <div class="extra-info">
+                <div class="dropdown-icon">icon</div>
+                <p class="song-len">3:21</p>
+              </div>
+              <div class="dropdown-list">
+                <div class="drop-item">
+                  <p>
+                    <i class="fas fa-play-circle"></i> <a href="">Play Now</a>
+                  </p>
+                </div>
+                <hr />
+                <div class="drop-item">
+                  <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                </div>
+                <hr />
+                <div class="drop-item">
+                  <p><i class="fas fa-music"></i> Add to playlist</p>
+                </div>
+                <hr />
+                <div class="drop-item">
+                  <p><i class="fas fa-info-circle"></i> Get Info</p>
+                </div>
+              </div>
             </div>
             <div class="releases-songs">
               <div class="image"><img src="assets/album_art.jpg" alt="" /></div>
@@ -95,26 +121,25 @@
           <div class="music-moods genre-item"></div>
           <div class="music-moods genre-item"></div>
         </section>
-           <!-- this is another themes portion, that electronic, party and road theme -->
-           <section class="music-themes-2">
-            <!-- 3 divs content -->
-            <div class="outer-div">
-                <div class="inner-div">
-                    <span>party</span>
-                </div>
+        <!-- this is another themes portion, that electronic, party and road theme -->
+        <section class="music-themes-2">
+          <!-- 3 divs content -->
+          <div class="outer-div">
+            <div class="inner-div">
+              <span>party</span>
             </div>
-            <div class="outer-div">
-                <div class="inner-div">
-                    <span>Electronic</span>
-                </div>
+          </div>
+          <div class="outer-div">
+            <div class="inner-div">
+              <span>Electronic</span>
             </div>
-            <div class="outer-div">
-                <div class="inner-div">
-                    <span>Travel</span>
-                </div>
+          </div>
+          <div class="outer-div">
+            <div class="inner-div">
+              <span>Travel</span>
             </div>
+          </div>
         </section>
-
 
         <section class="latest-lang-releases"></section>
         <section class="latest-lang-releases"></section>

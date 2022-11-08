@@ -94,6 +94,31 @@ section.releases-carasoul {
   height: 100%;
 }
 
+/* Extra info */
+.extra-info{
+  position: absolute;
+  left:28%;
+  display: flex;
+  flex-direction: column;
+}
+.song-len{
+  margin-top:.5%;
+}
+
+
+
+
+
+
+/* Dropdown */
+.dropdown-list{
+  position: absolute;
+  display: none;
+}
+
+
+
+
 /* Artists */
 .popular-artists {
   margin-top: 2%;
