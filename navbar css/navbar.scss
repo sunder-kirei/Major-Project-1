@@ -13,6 +13,7 @@
   align-items: center;
   padding-inline: 2rem;
   .logo {
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,7 +34,7 @@
   }
   button {
     color: white;
-
+    cursor: pointer;
     background-color: transparent;
     border: none;
     margin-right: auto;
@@ -52,6 +53,7 @@
     border: 1px solid black;
     padding: 0.25rem;
     background-color: rgb(32, 47, 133);
+    cursor: pointer;
     input {
       width: 100%;
       border: none;
@@ -72,6 +74,7 @@
     margin-left: 2rem;
     height: 2rem;
     margin-right: 3rem;
+    cursor: pointer;
   }
   .user {
     background-color: grey;
