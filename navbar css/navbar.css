@@ -1,0 +1,98 @@
+.player-content {
+  padding-top: 6.5rem !important;
+}
+
+.navbar {
+  background-color: rgb(12, 16, 39);
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  padding-inline: 2rem;
+}
+.navbar .logo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding-inline: 1rem;
+}
+.navbar .logo img {
+  height: 80%;
+  margin-right: 0.5rem;
+}
+.navbar .logo h4 {
+  font-weight: 400;
+  font-size: 1.25rem;
+  font-family: serif;
+}
+.navbar .logo h3 {
+  font-size: 1.5rem;
+}
+.navbar button {
+  color: white;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  margin-right: auto;
+  margin-left: 2rem;
+  font-weight: 400;
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+.navbar .search-box {
+  display: flex;
+  align-items: center;
+  max-width: 20rem;
+  width: 30%;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  padding: 0.25rem;
+  background-color: rgb(32, 47, 133);
+  cursor: pointer;
+}
+.navbar .search-box input {
+  width: 100%;
+  border: none;
+  font-family: sans-serif;
+  padding: 0.25rem;
+  background-color: rgb(32, 47, 133);
+  color: white;
+  font-size: 1rem;
+}
+.navbar .search-box input::-moz-placeholder {
+  color: white;
+}
+.navbar .search-box input:-ms-input-placeholder {
+  color: white;
+}
+.navbar .search-box input::placeholder {
+  color: white;
+}
+.navbar .search-box img {
+  height: 100%;
+}
+.navbar .notification {
+  margin-left: 2rem;
+  height: 2rem;
+  margin-right: 3rem;
+  cursor: pointer;
+}
+.navbar .user {
+  background-color: grey;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  padding: 0.5rem;
+  height: 60%;
+  cursor: pointer;
+}
+.navbar .user img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+}/*# sourceMappingURL=navbar.css.map */
