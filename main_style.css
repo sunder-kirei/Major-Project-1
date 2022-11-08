@@ -67,6 +67,7 @@ section.releases-carasoul {
   display: flex;
   flex-direction: row;
   border: 1px solid violet;
+  position: relative;
 }
 
 .releases-songs > img {
@@ -88,7 +89,7 @@ section.releases-carasoul {
   width: 30%;
   display: flex;
   flex-direction: column;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 .song-len {
   margin-top: 1.5rem;
@@ -96,15 +97,10 @@ section.releases-carasoul {
 
 /* Dropdown */
 .dropdown-list {
-  position: absolute;   
-  /* left: 50%; */
-  display: none;
+  position: absolute;
+  left: 50%;
+  /* display: none; */
 }
-
-
-
-
-
 
 /* Artists */
 .popular-artists {
