@@ -8,7 +8,8 @@
 /* Nav Bar */
 .top-bar {
   height: 10vh;
-  border: 1px solid blue;
+  z-index: 1000;
+  /* border: 1px solid blue; */
 }
 
 /* Player area */
@@ -76,9 +77,11 @@ section.releases-carasoul {
   width: 100%;
   object-fit: contain;
 }
+/* Song description div */
 .song-desc {
   display: flex;
   flex-direction: column;
+  padding-left: 0.5rem;
   justify-content: center;
   height: 100%;
   width: 180%;
@@ -95,15 +98,49 @@ section.releases-carasoul {
   margin-top: 1.5rem;
 }
 
-
 /* Dropdown */
 .dropdown-list {
-  border:1px solid cyan;
   position: absolute;
-  left: 70%;
-  top:13%;
-  height: 100%;
+  background-color: darkslateblue;
+  left: 60%;
+  top: 13%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  z-index: 2;
+  border: 1px solid black;
+  box-shadow: 0px 0px 2px 1px black;
+  transition: all ease-in-out 0.3s;
+  color: white;
+}
+.dropdown-list hr {
+  color: white;
+  width: 80%;
+}
+.dropdown-list a,
+.dropdown-list a:visited {
+  color: white;
+  text-decoration: none;
+}
+/*Dropdown-icon*/
+
+.dropdown-icon input[type="checkbox"] {
   display: none;
+}
+.fa-ellipsis-h {
+  cursor: pointer;
+}
+
+.dropdown-icon input[type="checkbox"]:checked + .dropdown-list {
+  width: max-content;
+  height: 110%;
+  opacity: 1;
+  padding: 5px;
 }
 
 /* Artists */
