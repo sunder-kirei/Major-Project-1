@@ -10,13 +10,15 @@
     <!-- NavBar CSS -->
     <link rel="stylesheet" href="./navbar css/navbar.css" />
     <!-- NavBar CSS -->
+    <link rel="stylesheet" href="./playlist-item css/playlist-item.css" />
 
     <script
-      src="https://kit.fontawesome.com/2d9b67a497.js"
+      src="https://kit.fontawesome.com/c2bccc69b6.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
+    <!-- Navbar  Header -->
     <header class="top-bar navbar">
       <div class="logo">
         <img src="assets\navbar\icons8-youtube-music-96.png" alt="icon" />
@@ -63,68 +65,83 @@
         <section class="releases">
           <h3 class="site-font">Latest Release</h3>
           <div class="latest-releases">
+            <!--Releases songs card  -->
             <div class="releases-songs">
               <img src="assets/album_art.jpg" alt="" />
-
               <div class="song-desc">
                 <p class="album-name album-font">Time</p>
                 <p class="album-date album-font">Aug 11,2017</p>
               </div>
               <div class="extra-info">
-                <div class="dropdown-icon">icon</div>
+                <div class="dropdown-icon dropdown">
+                  <label for="latest-release-checkbox"
+                    ><i class="fas fa-ellipsis-h"></i
+                  ></label>
+                  <input type="checkbox" id="latest-release-checkbox" />
+                  <div class="dropdown-list" id="d-list3">
+                    <div class="drop-item">
+                      <p>
+                        <i class="fas fa-play-circle"></i>
+                        <a href="">Play Now</a>
+                      </p>
+                    </div>
+                    <hr />
+                    <div class="drop-item">
+                      <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                    </div>
+                    <hr />
+                    <div class="drop-item">
+                      <p><i class="fas fa-music"></i> Add to playlist</p>
+                    </div>
+                    <hr />
+                    <div class="drop-item">
+                      <p><i class="fas fa-info-circle"></i> Get Info</p>
+                    </div>
+                  </div>
+                </div>
                 <p class="song-len">3:21</p>
-              </div>
-              <div class="dropdown-list">
-                <div class="drop-item">
-                  <p>
-                    <i class="fas fa-play-circle"></i> <a href="">Play Now</a>
-                  </p>
-                </div>
-                <hr />
-                <div class="drop-item">
-                  <p><i class="fas fa-list-ul"></i> Add to Queue</p>
-                </div>
-                <hr />
-                <div class="drop-item">
-                  <p><i class="fas fa-music"></i> Add to playlist</p>
-                </div>
-                <hr />
-                <div class="drop-item">
-                  <p><i class="fas fa-info-circle"></i> Get Info</p>
-                </div>
               </div>
             </div>
+            <!--Releases songs card  -->
             <div class="releases-songs">
               <img src="assets/album_art.jpg" alt="" />
-
               <div class="song-desc">
                 <p class="album-name album-font">Time</p>
                 <p class="album-date album-font">Aug 11,2017</p>
               </div>
               <div class="extra-info">
-                <div class="dropdown-icon">icon</div>
+                <div class="dropdown-icon dropdown">
+                  <label for="latest-release-checkbox2"
+                    ><i class="fas fa-ellipsis-h"></i
+                  ></label>
+                  <input type="checkbox" id="latest-release-checkbox2" />
+                  <div class="dropdown-list" id="d-list3">
+                    <div class="drop-item">
+                      <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                      <p>
+                        <i class="fas fa-play-circle"></i>
+                        <a href="">Play Now</a>
+                      </p>
+                    </div>
+                    <hr />
+                    <div class="drop-item">
+                      <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                    </div>
+                    <hr />
+                    <div class="drop-item">
+                      <p><i class="fas fa-music"></i> Add to playlist</p>
+                    </div>
+                    <hr />
+                    <div class="drop-item">
+                      <p><i class="fas fa-info-circle"></i> Get Info</p>
+                    </div>
+                  </div>
+                </div>
                 <p class="song-len">3:21</p>
-              </div>
-              <div class="dropdown-list">
-                <div class="drop-item">
-                  <p>
-                    <i class="fas fa-play-circle"></i> <a href="">Play Now</a>
-                  </p>
-                </div>
-                <hr />
-                <div class="drop-item">
-                  <p><i class="fas fa-list-ul"></i> Add to Queue</p>
-                </div>
-                <hr />
-                <div class="drop-item">
-                  <p><i class="fas fa-music"></i> Add to playlist</p>
-                </div>
-                <hr />
-                <div class="drop-item">
-                  <p><i class="fas fa-info-circle"></i> Get Info</p>
-                </div>
               </div>
             </div>
+
+            <!--Releases songs card  -->
             <div class="releases-songs">
               <img src="assets/album_art.jpg" alt="" />
 
@@ -133,58 +150,75 @@
                 <p class="album-date album-font">Aug 11,2017</p>
               </div>
               <div class="extra-info">
-                <div class="dropdown-icon">icon</div>
+                <!-- if someone clicks on the three dots, options will be shown to the user for further action -->
+                <div class="dropdown-icon dropdown">
+                  <label for="latest-release-checkbox3"
+                    ><i class="fas fa-ellipsis-h"></i
+                  ></label>
+                  <input type="checkbox" id="latest-release-checkbox3" />
+                  <div class="dropdown-list" id="d-list3">
+                    <div class="drop-item">
+                      <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                      <p>
+                        <i class="fas fa-play-circle"></i>
+                        <a href="">Play Now</a>
+                      </p>
+                    </div>
+                    <hr />
+                    <div class="drop-item">
+                      <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                    </div>
+                    <hr />
+                    <div class="drop-item">
+                      <p><i class="fas fa-music"></i> Add to playlist</p>
+                    </div>
+                    <hr />
+                    <div class="drop-item">
+                      <p><i class="fas fa-info-circle"></i> Get Info</p>
+                    </div>
+                  </div>
+                </div>
                 <p class="song-len">3:21</p>
-              </div>
-              <div class="dropdown-list">
-                <div class="drop-item">
-                  <p>
-                    <i class="fas fa-play-circle"></i> <a href="">Play Now</a>
-                  </p>
-                </div>
-                <hr />
-                <div class="drop-item">
-                  <p><i class="fas fa-list-ul"></i> Add to Queue</p>
-                </div>
-                <hr />
-                <div class="drop-item">
-                  <p><i class="fas fa-music"></i> Add to playlist</p>
-                </div>
-                <hr />
-                <div class="drop-item">
-                  <p><i class="fas fa-info-circle"></i> Get Info</p>
-                </div>
               </div>
             </div>
+
+            <!--Releases songs card  -->
+
             <div class="releases-songs">
               <img src="assets/album_art.jpg" alt="" />
-
               <div class="song-desc">
                 <p class="album-name album-font">Time</p>
                 <p class="album-date album-font">Aug 11,2017</p>
               </div>
               <div class="extra-info">
-                <div class="dropdown-icon">icon</div>
+                <div class="dropdown-icon dropdown">
+                  <label for="latest-release-checkbox4"
+                    ><i class="fas fa-ellipsis-h"></i
+                  ></label>
+                  <input type="checkbox" id="latest-release-checkbox4" />
+                  <div class="dropdown-list" id="d-list3">
+                    <div class="drop-item">
+                      <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                      <p>
+                        <i class="fas fa-play-circle"></i>
+                        <a href="">Play Now</a>
+                      </p>
+                    </div>
+                    <hr />
+                    <div class="drop-item">
+                      <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                    </div>
+                    <hr />
+                    <div class="drop-item">
+                      <p><i class="fas fa-music"></i> Add to playlist</p>
+                    </div>
+                    <hr />
+                    <div class="drop-item">
+                      <p><i class="fas fa-info-circle"></i> Get Info</p>
+                    </div>
+                  </div>
+                </div>
                 <p class="song-len">3:21</p>
-              </div>
-              <div class="dropdown-list">
-                <div class="drop-item">
-                  <p>
-                    <i class="fas fa-play-circle"></i> <a href="">Play Now</a>
-                  </p>
-                </div>
-                <hr />
-                <div class="drop-item">
-                  <p><i class="fas fa-list-ul"></i> Add to Queue</p>
-                </div>
-                <hr />
-                <div class="drop-item">
-                  <p><i class="fas fa-music"></i> Add to playlist</p>
-                </div>
-                <hr />
-                <div class="drop-item">
-                  <p><i class="fas fa-info-circle"></i> Get Info</p>
-                </div>
               </div>
             </div>
           </div>
@@ -259,7 +293,133 @@
         <section class="latest-lang-releases"></section>
       </main>
 
-      <aside class="playlist-container"></aside>
+      <aside class="playlist-container">
+        <header class="playlist-header">
+          <h2 class="site-font">My Playlist</h2>
+          <div class="queue-type">
+            <label for="queue-type-dd">
+              <h3 style="display: inline">Queue</h3>
+              <i class="fa-solid fa-circle-chevron-down"></i>
+            </label>
+            <input type="checkbox" name="queue-type-dd" id="queue-type-dd">
+            <div class="queue-type-list">
+              <p>Playlist</p>
+              <hr />
+              <p>Favourite songs</p>
+            </div>
+          </div>
+        </header>
+        <div class="song-list">
+          <div class="song-items">
+            <div class="song-num site-font"><p>01</p></div>
+            <div class="album-art"><img src="assets/playlist/after.jpg" alt=""></div>
+            <div class="song-title">
+              <p class="title-name site-font">Blinding Light</p>
+              <p class="artist-name site-font">Weekend</p>
+            </div>
+            <div class="like-marker"><i class="fa-regular fa-heart"></i></div>
+          </div>
+          <div class="song-items">
+            <div class="song-num site-font"><p>02</p></div>
+            <div class="album-art"><img src="assets/playlist/Hollywood_bleeding.jfif" alt=""></div>
+            <div class="song-title">
+              <p class="title-name site-font">Hollywood's Bleeding</p>
+              <p class="artist-name site-font">Post Malone</p>
+            </div>
+            <div class="like-marker"><i class="fa-regular fa-heart"></i></div>
+          </div>
+          <div class="song-items">
+            <div class="song-num site-font"><p>03</p></div>
+            <div class="album-art"><img src="assets/playlist/atMyWorst.jfif" alt=""></div>
+            <div class="song-title">
+              <p class="title-name site-font">At my worst</p>
+              <p class="artist-name site-font">Pink Sweat$</p>
+            </div>
+            <div class="like-marker"><i class="fa-regular fa-heart"></i></div>
+          </div>
+          <div class="song-items">
+            <div class="song-num site-font"><p>04</p></div>
+            <div class="album-art"><img src="assets/playlist/after.jpg" alt=""></div>
+            <div class="song-title">
+              <p class="title-name site-font">Blinding Light</p>
+              <p class="artist-name site-font">Weekend</p>
+            </div>
+            <div class="like-marker"><i class="fa-regular fa-heart"></i></div>
+          </div>
+          <div class="song-items">
+            <div class="song-num site-font"><p>05</p></div>
+            <div class="album-art"><img src="assets/playlist/till_i_collapse.jfif" alt=""></div>
+            <div class="song-title">
+              <p class="title-name site-font">Till I collapse</p>
+              <p class="artist-name site-font">Eminem</p>
+            </div>
+            <div class="like-marker"><i class="fa-regular fa-heart"></i></div>
+          </div>
+          <div class="song-items">
+            <div class="song-num site-font"><p>06</p></div>
+            <div class="album-art"><img src="assets/playlist/austin-neill-kKlVSrFbjYY-unsplash.jpg" alt=""></div>
+            <div class="song-title">
+              <p class="title-name site-font">Blinding Light</p>
+              <p class="artist-name site-font">Weekend</p>
+            </div>
+            <div class="like-marker"><i class="fa-regular fa-heart"></i></div>
+          </div>
+          <div class="song-items">
+            <div class="song-num site-font"><p>07</p></div>
+            <div class="album-art"><img src="assets/playlist/after.jpg" alt=""></div>
+            <div class="song-title">
+              <p class="title-name site-font">Blinding Light</p>
+              <p class="artist-name site-font">Weekend</p>
+            </div>
+            <div class="like-marker"><i class="fa-regular fa-heart"></i></div>
+          </div>
+          <div class="song-items">
+            <div class="song-num site-font"><p>08</p></div>
+            <div class="album-art"><img src="assets/playlist/Hollywood_bleeding.jfif" alt=""></div>
+            <div class="song-title">
+              <p class="title-name site-font">Hollywood's Bleeding</p>
+              <p class="artist-name site-font">Post Malone</p>
+            </div>
+            <div class="like-marker"><i class="fa-regular fa-heart"></i></div>
+          </div>
+          <div class="song-items">
+            <div class="song-num site-font"><p>09</p></div>
+            <div class="album-art"><img src="assets/playlist/atMyWorst.jfif" alt=""></div>
+            <div class="song-title">
+              <p class="title-name site-font">At my worst</p>
+              <p class="artist-name site-font">Pink Sweat$</p>
+            </div>
+            <div class="like-marker"><i class="fa-regular fa-heart"></i></div>
+          </div>
+          <div class="song-items">
+            <div class="song-num site-font"><p>10</p></div>
+            <div class="album-art"><img src="assets/playlist/after.jpg" alt=""></div>
+            <div class="song-title">
+              <p class="title-name site-font">Blinding Light</p>
+              <p class="artist-name site-font">Weekend</p>
+            </div>
+            <div class="like-marker"><i class="fa-regular fa-heart"></i></div>
+          </div>
+          <div class="song-items">
+            <div class="song-num site-font"><p>11</p></div>
+            <div class="album-art"><img src="assets/playlist/till_i_collapse.jfif" alt=""></div>
+            <div class="song-title">
+              <p class="title-name site-font">Till I collapse</p>
+              <p class="artist-name site-font">Eminem</p>
+            </div>
+            <div class="like-marker"><i class="fa-regular fa-heart"></i></div>
+          </div>
+          <div class="song-items">
+            <div class="song-num site-font"><p>12</p></div>
+            <div class="album-art"><img src="assets/playlist/austin-neill-kKlVSrFbjYY-unsplash.jpg" alt=""></div>
+            <div class="song-title">
+              <p class="title-name site-font">Blinding Light</p>
+              <p class="artist-name site-font">Weekend</p>
+            </div>
+            <div class="like-marker"><i class="fa-regular fa-heart"></i></div>
+          </div>
+        </div>
+      </aside>
     </div>
   </body>
 </html>
