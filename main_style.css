@@ -280,6 +280,6 @@ section.popular-genres {
 /* Current playlist */
 .playlist-container {
   width: 30vw;
-  height: 60vh;
+  height: 80vh;
   border: 1px solid black;
 }
