@@ -25,6 +25,7 @@
 }
 .top-songs-container .song-items {
   width: 100%;
+  cursor: pointer;
   display: flex;
   height: 11.25vh;
   margin-block: 0.75rem;
@@ -46,7 +47,16 @@
   text-align: center;
 }
 .top-songs-container .song-items .song-num {
+  position: relative;
   width: 3vw;
+}
+.top-songs-container .song-items .song-num .play-icon {
+  position: absolute;
+  left: 1.1rem;
+  display: none;
+  transition-property: all;
+  transition-timing-function: ease-in;
+  transition-duration: 1s;
 }
 .top-songs-container .song-items .album-art img {
   box-sizing: border-box;
@@ -67,6 +77,12 @@
   text-align: center;
   box-sizing: border-box;
   padding: 0.5rem;
+}
+.top-songs-container .song-items:hover .song-num span.play-icon {
+  display: block;
+}
+.top-songs-container .song-items:hover .song-num p {
+  display: none;
 }
 
 .aside-bar .similar-artists-container {
@@ -256,7 +272,13 @@
   text-align: center;
 }
 .aside-bar .Recently-playlist-container .song-list .song-items .song-num {
+  position: relative;
   width: 3vw;
+}
+.aside-bar .Recently-playlist-container .song-list .song-items .song-num .play-icon {
+  position: absolute;
+  left: 1.1rem;
+  display: none;
 }
 .aside-bar .Recently-playlist-container .song-list .song-items .album-art img {
   box-sizing: border-box;
@@ -272,4 +294,10 @@
 }
 .aside-bar .Recently-playlist-container .song-list .song-items .like-marker {
   width: 3vw;
+}
+.aside-bar .Recently-playlist-container .song-list .song-items:hover .song-num span.play-icon {
+  display: block;
+}
+.aside-bar .Recently-playlist-container .song-list .song-items:hover .song-num p {
+  display: none;
 }
