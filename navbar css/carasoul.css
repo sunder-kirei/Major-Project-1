@@ -1,0 +1,8 @@
+.releases-carasoul .release-albums {
+  overflow: hidden;
+}
+.releases-carasoul .release-albums img {
+  width: 110%;
+  -o-object-position: right 2px bottom 2px;
+     object-position: right 2px bottom 2px;
+}

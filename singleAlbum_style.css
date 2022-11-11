@@ -1,0 +1,39 @@
+/* Common properties */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Nav Bar */
+.top-bar {
+  height: 10vh;
+  z-index: 1000;
+  /* border: 1px solid blue; */
+}
+
+/* Player area */
+.player-content {
+  display: flex;
+  padding-inline: 3vw;
+  justify-content: space-between;
+}
+
+/* main */
+main {
+  width: 60vw;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.aside-bar {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  border: 1px solid black;
+}
+
+

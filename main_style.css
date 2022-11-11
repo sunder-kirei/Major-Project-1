@@ -23,7 +23,6 @@
 main {
   width: 60vw;
   border: 1px solid black;
-  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   padding: 0.5rem;
@@ -41,6 +40,7 @@ section.releases-carasoul {
 }
 .release-albums {
   height: 100%;
+  max-width: 32%;
   border: 0.5px solid violet;
   margin-inline: 1%;
   flex-grow: 1;
