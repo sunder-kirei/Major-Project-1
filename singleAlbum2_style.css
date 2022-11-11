@@ -71,8 +71,9 @@
 
 .aside-bar .similar-artists-container {
   display: flex;
-  height: 45vh;
+  height: 55vh;
   flex-direction: column;
+  position: relative;
 }
 .aside-bar .similar-artists-container .playlist-header {
   width: 100%;
@@ -105,9 +106,95 @@
 .aside-bar .similar-artists-container .playlist-header .queue-type input[type=checkbox] {
   display: none;
 }
+.aside-bar .similar-artists-container .similar-artists-list {
+  padding-block: 0.2rem;
+  display: grid;
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1;
+  width: 100%;
+  row-gap: 0.5rem;
+  /* Song description div */
+  /* Extra info */
+  /* Dropdown */
+  /*Dropdown-icon*/
+}
+.aside-bar .similar-artists-container .similar-artists-list .releases-songs {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.aside-bar .similar-artists-container .similar-artists-list .releases-songs > img {
+  grid-area: album-art;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.aside-bar .similar-artists-container .similar-artists-list .song-desc {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.5rem;
+  justify-content: center;
+  height: 100%;
+  width: 180%;
+}
+.aside-bar .similar-artists-container .similar-artists-list .extra-info {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 0.2rem;
+}
+.aside-bar .similar-artists-container .similar-artists-list .song-len {
+  margin-top: 1.5rem;
+}
+.aside-bar .similar-artists-container .similar-artists-list .dropdown-list {
+  position: absolute;
+  background-color: darkslateblue;
+  left: 60%;
+  top: 13%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  z-index: 2;
+  border: 1px solid black;
+  box-shadow: 0px 0px 2px 1px black;
+  transition: all ease-in-out 0.3s;
+  color: white;
+}
+.aside-bar .similar-artists-container .similar-artists-list .dropdown-list hr {
+  color: white;
+  width: 80%;
+}
+.aside-bar .similar-artists-container .similar-artists-list .dropdown-list a,
+.aside-bar .similar-artists-container .similar-artists-list .dropdown-list a:visited {
+  color: white;
+  text-decoration: none;
+}
+.aside-bar .similar-artists-container .similar-artists-list .dropdown-icon {
+  margin-left: 0.5rem;
+}
+.aside-bar .similar-artists-container .similar-artists-list .dropdown-icon input[type=checkbox] {
+  display: none;
+}
+.aside-bar .similar-artists-container .similar-artists-list .fa-ellipsis-h {
+  cursor: pointer;
+}
+.aside-bar .similar-artists-container .similar-artists-list .dropdown-icon input[type=checkbox]:checked + .dropdown-list {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 110%;
+  opacity: 1;
+  padding: 5px;
+}
 .aside-bar .Recently-playlist-container {
   width: 100%;
-  height: 45vh;
+  height: 55vh;
   overflow-y: hidden;
   flex-direction: column;
   position: relative;
@@ -145,7 +232,7 @@
 }
 .aside-bar .Recently-playlist-container .song-list {
   overflow-y: scroll;
-  flex-grow: 1;
+  height: 41vh;
 }
 .aside-bar .Recently-playlist-container .song-list .song-items {
   width: 100%;
