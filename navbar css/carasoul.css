@@ -1,8 +1,19 @@
+.releases-carasoul {
+  position: relative;
+}
 .releases-carasoul .release-albums {
   overflow: hidden;
+  position: relative;
+  transition: all cubic-bezier(0.63, 0.35, 0.63, 1.03) 0.7s;
+  cursor: pointer;
 }
 .releases-carasoul .release-albums img {
   width: 110%;
   -o-object-position: right 2px bottom 2px;
      object-position: right 2px bottom 2px;
+}
+.releases-carasoul .release-albums:hover {
+  z-index: 4;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 12px 0.1px black;
 }
