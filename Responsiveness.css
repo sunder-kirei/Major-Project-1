@@ -1,6 +1,6 @@
 
 .more-btn , #more{
-    display: none;
+    visibility: hidden;
 }
 
 @media screen and (max-width: 900px) {
@@ -33,6 +33,7 @@
     }
     
     .more-btn , #more{
+        visibility: visible;
         left:90vw;
         font-size: 1.5rem;
         position: fixed;
@@ -55,4 +56,28 @@
     background-color: aliceblue;
     right: 2vw;
 }
+#vol-slider-container{
+    width: 5vw!important;
+}
+
+
+
+
+/* Music Theme on the main page's responsivity */
+.stations-div{
+    display: none;
+}
+
+ .outer-div{
+    width: 25vw;
+    height: 15vh;
+}
+
+}
+
+/* ------------------------------------------------------------------------------------ */
+@media screen and (max-width:786px){
+    #vol-slider-container{
+        display: none;
+    }
 }

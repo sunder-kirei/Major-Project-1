@@ -89,3 +89,124 @@
     }
   }
 }
+@mixin songItemStyle($itemsHeight) {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  height: $itemsHeight;
+  margin-block: 0.75rem;
+  flex-direction: row;
+  box-sizing: border-box;
+  .song-num,
+  .album-art,
+  .song-title,
+  .like-marker {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .song-num,
+  .like-marker {
+    text-align: center;
+  }
+
+  .album-art {
+    img {
+      box-sizing: border-box;
+      width: $itemsHeight;
+      height: $itemsHeight;
+      object-fit: contain;
+    }
+  }
+  .song-title {
+    padding-inline-start: 0.5rem;
+    flex-grow: 1;
+  }
+  .like-marker {
+    width: 3vw;
+  }
+}
+
+.player-controls {
+  display: flex;
+  position: sticky;
+  z-index: 100;
+  height: 12vh;
+  bottom:0px;
+  border: 1px solid black;
+  background-color: white;
+  width: 100%;
+
+  .current-song-container {
+    flex-grow: 1;
+    margin-left: 0.5rem;
+    // width: 25vw;
+    min-width: 20vw;
+    border: 1px solid violet;
+
+    .song-items {
+      @include songItemStyle(8.4vh);
+    }
+  }
+  #controls-progress-bar{
+    display: flex;
+    height: 100%;
+    flex-grow: 4;
+    // width: 60vw;
+    min-width: 45vw;
+    align-items: center;
+    border:1px solid black;
+    flex-direction: column;
+    #controls{
+      margin-top: .5rem;
+      display: flex;
+      height: 2.5rem;
+      div{
+        font-size: 1.2em;
+        margin-block: auto;
+      }
+      width: 40%;
+      min-width: 30vw;
+      justify-content: space-evenly;
+    }
+    #progress-bar{
+      width: 60%;
+      min-width: 40vw;
+      display: flex;
+      
+      #seek-slider{
+        flex-grow: 2;
+      }
+
+    }
+    
+
+  }
+  .vol-bar-control {
+    flex-grow: 1;
+    // width: 20vw;
+    display: flex;
+    height: 100%;
+    // min-width: 20vw;
+    border: 1px solid violet;
+    justify-content: space-around;
+    align-items: center;
+
+    .queue, .device-type , .vol-control{
+      width: 20%;
+      text-align: center;
+      // flex-grow: 2;
+    }
+
+    #vol-slider-container{
+      // width: 100%;
+      margin:5%;
+      flex-grow: 1;
+      #volume-slider{
+        width: 100%;
+      }
+    }
+    
+  }
+}
