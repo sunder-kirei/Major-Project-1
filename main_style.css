@@ -1,8 +1,18 @@
 /* Common properties */
+:root {
+  --site-font-family: helvetica, sans-serif;
+  --site-font-primary: white;
+  --site-font-secondary: rgb(185, 185, 185);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--site-font-family);
+}
+.site-font {
+  font-family: var(--site-font-family) !important;
 }
 
 /* Nav Bar */
@@ -45,7 +55,6 @@ section.releases-carasoul {
   margin-inline: 1%;
   flex-grow: 1;
 }
-
 
 /* Latest release albums */
 

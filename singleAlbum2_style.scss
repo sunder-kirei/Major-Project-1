@@ -1,3 +1,15 @@
+:root {
+  --site-font-family: helvetica, sans-serif;
+  --site-font-primary:white;
+  --site-font-secondary:rgb(185, 185, 185);
+}
+* {
+  font-family: var(--site-font-family);
+}
+.site-font {
+  font-family: var(--site-font-family);
+}
+
 .player-content {
   margin-top: 2rem;
   overflow: auto;
@@ -302,4 +314,3 @@
     }
   }
 }
-
