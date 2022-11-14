@@ -100,9 +100,14 @@ section.releases-carasoul {
   height: 100%;
   width: 180%;
 }
+.album-name{
+  font-weight: bolder;
+  text-transform: capitalize;
+}
 .album-date, .song-len{
+  text-transform: uppercase;
   color:var(--site-font-secondary);
-  font-size: .9rem;
+  font-size: .85rem;
 }
 
 /* Extra info */
@@ -295,6 +300,50 @@ section.popular-genres {
   color: white;
   font-size: 2vw;
 }
+
+/* Latest Englist section */
+.latest-lang-releases{
+  margin-top:1rem;
+}
+.latest-lang-releases .latest-releases-container{
+  display: flex;
+  
+}
+.latest-releases-container .release-items{
+  margin-top: 1rem;
+  width: 17%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-inline: .35rem;
+  overflow: hidden;
+  background-color: var(--site-background-primary);
+  transition: box-shadow 0.2s ease-in-out;
+
+}
+.latest-releases-container .release-items:hover{
+  box-shadow: 0px 0px 5px 2px rgba(179, 167, 234, 0.625);
+  border-radius: 4px;
+}
+.release-items .song-desc{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  height: 7vh;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.release-items > img{
+  
+  width: 100%;
+}
+
+
+
+
+
+
+
 
 /* Current playlist */
 .playlist-container {
