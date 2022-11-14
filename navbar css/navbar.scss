@@ -1,3 +1,12 @@
+:root {
+  --site-font-family: helvetica, sans-serif;
+  --site-font-primary: white;
+  --site-font-secondary: rgb(185, 185, 185);
+  --site-background-primary:rgb(7, 1, 48);
+  --site-background-secondary:rgb(4, 37, 89);
+  color:white;
+  background-color: var(--site-background-primary);
+}
 .player-content {
   padding-top: 6.5rem !important;
 }
@@ -127,6 +136,7 @@
     width: 3vw;
   }
 }
+// Bottom controls bar
 
 .player-controls {
   display: flex;
@@ -135,7 +145,7 @@
   height: 12vh;
   bottom:0px;
   border: 1px solid black;
-  background-color: white;
+  background-color: rgb(43, 43, 42);
   width: 100%;
 
   .current-song-container {
@@ -143,7 +153,6 @@
     margin-left: 0.5rem;
     // width: 25vw;
     min-width: 20vw;
-    border: 1px solid violet;
 
     .song-items {
       @include songItemStyle(8.4vh);
@@ -156,7 +165,6 @@
     // width: 60vw;
     min-width: 45vw;
     align-items: center;
-    border:1px solid black;
     flex-direction: column;
     #controls{
       margin-top: .5rem;
@@ -188,8 +196,6 @@
     // width: 20vw;
     display: flex;
     height: 100%;
-    // min-width: 20vw;
-    border: 1px solid violet;
     justify-content: space-around;
     align-items: center;
 

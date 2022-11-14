@@ -16,7 +16,7 @@
 		width: 300px;
 		height: 68vh;
 		background-color: #050043;
-		box-shadow: 0px 0px 2px 1px white;
+		box-shadow: 0px 0px 2px 1px rgba(14, 13, 13, 0.534);
 		right: -200px;
 		top: 23.5%;
 		overflow-y: scroll;
@@ -53,7 +53,6 @@
     overflow-y: auto !important;
     top:3vh;
     z-index: 4000;
-    background-color: aliceblue;
     right: 2vw;
 }
 #vol-slider-container{

@@ -1,3 +1,13 @@
+:root {
+  --site-font-family: helvetica, sans-serif;
+  --site-font-primary: white;
+  --site-font-secondary: rgb(185, 185, 185);
+  --site-background-primary:rgb(7, 1, 48);
+  --site-background-secondary:rgb(4, 37, 89);
+  color: white;
+  background-color: var(--site-background-primary);
+}
+
 .playlist-container {
   overflow: hidden;
 }
@@ -67,8 +77,10 @@
   overflow-y: scroll;
   height: 70vh;
   width: 100%;
+  background-color: var(--site-background-primary);
 }
 .playlist-container .song-list .song-items {
+  background-color: var(--site-background-secondary);
   width: 100%;
   display: flex;
   cursor: pointer;
@@ -110,10 +122,13 @@
   -webkit-padding-start: 0.5rem;
           padding-inline-start: 0.5rem;
   flex-grow: 1;
-  border: 1px solid red;
 }
 .playlist-container .song-list .song-items .song-title .artist-name {
-  color: blue;
+  color: var(--site-font-secondary);
+  font-size: 0.9rem;
+}
+.playlist-container .song-list .song-items .song-title .title-name {
+  color: var(--site-font-primary);
 }
 .playlist-container .song-list .song-items .like-marker {
   width: 3vw;
