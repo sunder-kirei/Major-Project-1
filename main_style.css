@@ -3,9 +3,9 @@
   --site-font-family: helvetica, sans-serif;
   --site-font-primary: white;
   --site-font-secondary: rgb(185, 185, 185);
-  --site-background-primary:rgb(7, 1, 48);
-  --site-background-secondary:rgb(4, 37, 89);
-  color:white;
+  --site-background-primary: rgb(7, 1, 48);
+  --site-background-secondary: rgb(4, 37, 89);
+  color: white;
   background-color: var(--site-background-primary);
 }
 
@@ -36,7 +36,6 @@
 /* main */
 main {
   width: 60vw;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   padding: 0.5rem;
@@ -47,7 +46,6 @@ main {
 section.releases-carasoul {
   display: flex;
   width: 100%;
-  border: 1px solid red;
   height: 30vh;
   box-sizing: border-box;
   padding-block: 2%;
@@ -55,7 +53,6 @@ section.releases-carasoul {
 .release-albums {
   height: 100%;
   max-width: 32%;
-  border: 0.5px solid violet;
   margin-inline: 1%;
   flex-grow: 1;
 }
@@ -69,7 +66,6 @@ section.releases-carasoul {
   display: grid;
   width: 90%;
   margin-top: 0.5rem;
-  border: 1px solid red;
   height: 40vh;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-template-rows: repeat(2, minmax(0, 1fr));
@@ -81,7 +77,6 @@ section.releases-carasoul {
 .releases-songs {
   display: flex;
   flex-direction: row;
-  border: 1px solid violet;
   position: relative;
 }
 
@@ -100,14 +95,15 @@ section.releases-carasoul {
   height: 100%;
   width: 180%;
 }
-.album-name{
+.album-name {
   font-weight: bolder;
   text-transform: capitalize;
 }
-.album-date, .song-len{
+.album-date,
+.song-len {
   text-transform: uppercase;
-  color:var(--site-font-secondary);
-  font-size: .85rem;
+  color: var(--site-font-secondary);
+  font-size: 0.85rem;
 }
 
 /* Extra info */
@@ -116,7 +112,7 @@ section.releases-carasoul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 .song-len {
   margin-top: 1.5rem;
@@ -170,7 +166,6 @@ section.releases-carasoul {
 /* Artists */
 .popular-artists {
   margin-top: 2%;
-  /* border:1px solid red; */
   width: 100%;
 }
 
@@ -180,24 +175,27 @@ section.releases-carasoul {
 }
 .artist-item {
   margin-inline-end: 1%; /*TODO: Think over the padding*/
+  text-align: center;
+  text-transform: capitalize;
 }
 .artist-item img {
   width: 100%;
   object-fit: cover;
   border-radius: 50%;
 }
+.artist-item img:hover{
+  box-shadow: 0px 0px 5px 2px rgba(179, 167, 234, 0.625);
+} 
 
 /* Popular Generes */
 
 section.popular-genres {
   margin-top: 5vh;
-  border: 1px solid red;
   display: flex;
   height: 15vh;
 }
 
 .genre-item {
-  border: 1px solid violet;
   flex-grow: 1;
 }
 
@@ -211,7 +209,7 @@ section.popular-genres {
   background-color: yellow;
   width: 9vw;
   height: 12vh;
-  left: 6.75px;
+  left: 0.439453125vw;
   position: relative;
 }
 #dark-yellow {
@@ -219,18 +217,91 @@ section.popular-genres {
   width: 8vw;
   background-color: darkgoldenrod;
   height: 13.7vh;
-  top: 4px;
-  left: 15.5px;
+  top: 0.554016620498615vh;
+  left: 0.9440104166666666vw;
 }
+
 #orange {
   position: absolute;
   width: 7vw;
   z-index: 2;
-  background-color: orange;
+  background-color: rgb(255, 115, 0);
   height: 15vh;
-  top: 1px;
-  left: 23.5px;
+  top: 0.13850415512465375vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 1.5299479166666667vw;
 }
+/* Stations icon animation  */
+@keyframes rotate{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+#orange span#radio-icon {
+  font-size: 5vw;
+  cursor: pointer;
+  animation-name: rotate;
+  animation-duration: 10s;
+  overflow: hidden;
+  animation-iteration-count: infinite;
+}
+
+/* Stations genres */
+
+.music-moods{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.music-mood-icons{
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border:1px solid blue; */
+  width: 6vw;
+  height: 6vw;
+}
+.music-mood-icons:hover{
+  box-shadow: 0px 0px 5px 2px rgba(179, 167, 234, 0.625);
+}
+.music-moods:nth-child(2) .music-mood-icons{
+  background-image: url(assets/music_moods/love_music.jpg);
+  background-size: cover;
+}
+.music-moods:nth-child(3) .music-mood-icons{
+  background-image: url(assets/music_moods/retro.jpg);
+  background-size: cover;
+}
+.music-moods:nth-child(4) .music-mood-icons{
+  background-image: url(assets/music_moods/workout.webp);
+  background-size: cover;
+  background-position:-15px 0px;
+}
+.music-moods:nth-child(5) .music-mood-icons{
+  background-image: url(assets/music_moods/chill_music.jpg);
+  background-size: cover;
+}
+.music-moods:nth-child(6) .music-mood-icons{
+  background-image: url(assets/music_moods/rock.jpg);
+  background-size: cover;
+}
+
+.music-moods:nth-child(7) .music-mood-icons{
+  background-image: url(assets/music_moods/pop.png);
+  background-size: cover;
+}
+
+
+
+
+
+
 
 /* music themes -2 */
 .music-themes-2 {
@@ -302,30 +373,28 @@ section.popular-genres {
 }
 
 /* Latest Englist section */
-.latest-lang-releases{
-  margin-top:1rem;
+.latest-lang-releases {
+  margin-top: 1rem;
 }
-.latest-lang-releases .latest-releases-container{
+.latest-lang-releases .latest-releases-container {
   display: flex;
-  
 }
-.latest-releases-container .release-items{
+.latest-releases-container .release-items {
   margin-top: 1rem;
   width: 17%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-inline: .35rem;
+  margin-inline: 0.35rem;
   overflow: hidden;
   background-color: var(--site-background-primary);
   transition: box-shadow 0.2s ease-in-out;
-
 }
-.latest-releases-container .release-items:hover{
+.latest-releases-container .release-items:hover {
   box-shadow: 0px 0px 5px 2px rgba(179, 167, 234, 0.625);
   border-radius: 4px;
 }
-.release-items .song-desc{
+.release-items .song-desc {
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -333,17 +402,9 @@ section.popular-genres {
   justify-content: space-evenly;
   width: 100%;
 }
-.release-items > img{
-  
+.release-items > img {
   width: 100%;
 }
-
-
-
-
-
-
-
 
 /* Current playlist */
 .playlist-container {
