@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./navbar css/navbar.css" />
     <!-- Playlist CSS -->
     <!-- <link rel="stylesheet" href="./playlist-item css/playlist-item.css" /> -->
-    <link rel="stylesheet" href="Responsiveness.css">
+    <link rel="stylesheet" href="Responsiveness.css" />
     <script
       src="https://kit.fontawesome.com/c2bccc69b6.js"
       crossorigin="anonymous"
@@ -23,7 +23,7 @@
     <!-- Navbar  Header -->
     <header class="top-bar navbar">
       <div class="logo">
-        <img src="../assets/navbar/icons8-youtube-music-96.png" alt="icon" />
+        <img src="./assets/navbar/icons8-youtube-music-96.png" alt="icon" />
         <span>
           <h4>Ninja</h4>
           <h3>Studio</h3>
@@ -58,9 +58,27 @@
         <div class="artist-info-container">
           <img src="assets/artist_profile/NF.jpg" alt="" />
           <div class="artist-desc-container">
-            <div class="artist-desc-header"></div>
-            <div class="description"></div>
-            <div class="artist-desc-footer"></div>
+            <div class="artist-desc-header">
+              <h1>NF</h1>
+              <span>
+                <span class="follower-count">7,603,837 Followers</span>
+              </span>
+              <h3>American Rapper</h3>
+            </div>
+            <div class="description">
+              NF is the stage name of Michigan rapper and composer Nate
+              Feuerstein, who emerged with his debut album, Mansion, in 2015.
+              The raw emotion and honesty in his music continued on Therapy
+              Session, building the foundation of an incredibly strong and loyal
+              fan base.
+            </div>
+            <div class="artist-desc-footer">
+              <div class="buttons">
+                <button id="play">Play All</button>
+                <button id="follow">Follow</button>
+              </div>
+              <span>247 Tracks | 128 Albums</span>
+            </div>
           </div>
         </div>
 
@@ -203,7 +221,7 @@
         </div>
       </main>
       <label for="more" class="more-btn">More </label>
-      <input type="checkbox" name="more-input" id="more">
+      <input type="checkbox" name="more-input" id="more" />
       <aside class="aside-bar">
         <div class="similar-artists-container">
           <header class="playlist-header">
@@ -532,8 +550,7 @@
           <i class="fa-solid fa-desktop"></i>
         </div>
         <div class="vol-controls">
-          <span> <i class="fa fa-duotone fa-volume-high"></i>
-          </span>
+          <span> <i class="fa fa-duotone fa-volume-high"></i> </span>
         </div>
         <div id="vol-slider-container">
           <input type="range" id="volume-slider" max="100" value="100" />

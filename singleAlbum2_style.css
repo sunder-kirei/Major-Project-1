@@ -1,7 +1,7 @@
 :root {
   --site-font-family: helvetica, sans-serif;
-  --site-font-primary:white;
-  --site-font-secondary:rgb(185, 185, 185);
+  --site-font-primary: white;
+  --site-font-secondary: rgb(185, 185, 185);
 }
 
 * {
@@ -25,13 +25,54 @@
 }
 .artist-info-container img {
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .artist-info-container .artist-desc-container {
-  flex-grow: 1;
-  height: 100%;
+  position: relative;
+  margin-top: 2rem;
+}
+.artist-info-container .artist-desc-container .artist-desc-header {
+  display: flex;
+  flex-direction: column;
+}
+.artist-info-container .artist-desc-container .artist-desc-header > span {
+  position: absolute;
+  right: 0;
+  color: grey;
+}
+.artist-info-container .artist-desc-container .artist-desc-header h3 {
+  color: grey;
+}
+.artist-info-container .artist-desc-container .description {
+  color: grey;
+  margin-bottom: 2rem;
+}
+.artist-info-container .artist-desc-container .artist-desc-footer button {
+  cursor: pointer;
+}
+.artist-info-container .artist-desc-container .artist-desc-footer .buttons {
+  display: flex;
+}
+.artist-info-container .artist-desc-container .artist-desc-footer .buttons #follow {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+}
+.artist-info-container .artist-desc-container .artist-desc-footer .buttons #play {
+  font-size: 1rem;
+  color: white;
+  font-weight: 700;
+  width: 10rem;
+  height: 3rem;
+  margin-right: 4rem;
+  background-image: linear-gradient(to right, blue, violet);
+}
+.artist-info-container .artist-desc-container .artist-desc-footer span {
+  color: rgb(201, 200, 200);
+  font-size: 1rem;
+  margin-top: 1rem;
 }
 
 .top-songs-container {
